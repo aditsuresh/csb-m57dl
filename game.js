@@ -187,6 +187,7 @@ function updateBees() {
   if (hits.innerHTML >= 1000) {
     //checks for number of hits and if it has reached 1000 stings yet
     alert("Game Over!!!!!"); //if it has then it alerts the user and stops the game
+    restart();
   } else {
     updateTimer = setTimeout("updateBees()", period); //this changes the position based on the amount of hits
   }
